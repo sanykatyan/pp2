@@ -19,7 +19,7 @@ print(y)
 print("Hello, World!")
 
 
-z = 4342525242
-print(z)
+print("Hello"); print("How are you?"); print("Bye bye!")
+
 
 
