@@ -1,5 +1,0 @@
-print("Hello, World!")
-print("привет")
-print("хай ")
-print("ура")
-print("пока")
