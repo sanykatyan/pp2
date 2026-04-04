@@ -1,4 +1,4 @@
-CREATE FUNCTION search(p text)
+CREATE OR REPLACE FUNCTION search_pattern(p text)
 RETURNS TABLE(id int, name varchar, phone varchar)
 AS $$
 BEGIN
@@ -11,7 +11,7 @@ END;
 $$ LANGUAGE plpgsql;
 
 
-CREATE FUNCTION get_contacts(limit_count int, offset_count int)
+CREATE OR REPLACE FUNCTION get_contacts(limit_count int, offset_count int)
 RETURNS TABLE(id int, name varchar, phone varchar)
 AS $$
 BEGIN
@@ -21,3 +21,5 @@ BEGIN
     LIMIT limit_count OFFSET offset_count;
 END;
 $$ LANGUAGE plpgsql;
+
+
